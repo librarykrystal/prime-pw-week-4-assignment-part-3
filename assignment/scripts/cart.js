@@ -7,18 +7,32 @@ let basket = [];
 function addItem(item){
     console.log('in addItem function, item input test:', item);
     basket.push(item);
-    console.log('Test to see new item is in array:', basket);
+    console.log('Test to see new item is in basket:', basket);
     return true;
 }
 
-console.log(addItem('thing1'));
-console.log(addItem('thing2'));
+console.log(addItem('Toto'));
+console.log(addItem('E.T.'));
+console.log(`Basket is ${basket}`);
+console.log('Adding Marion (expect true)', addItem('Marion Ravenwood'));
+console.log(`Basket is now ${basket}`);
 
 
 function listItems(){
- for(i in basket){
-    console.log('Item in basket:', basket[i]);
+    console.log('Test: In listItems function.');
+    for(i in basket){
+        console.log('Item in basket:', basket[i]);
  }
 }
 
 listItems();
+
+
+function empty(){
+    console.log('Test: In empty function.')
+    basket.length = 0;
+}
+
+empty(basket);
+console.log(`Basket is ${basket}`);
+console.log('Let\'s let them stretch their legs:', basket);
