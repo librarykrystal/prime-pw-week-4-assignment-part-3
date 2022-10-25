@@ -36,3 +36,8 @@ function empty(){
 empty(basket);
 console.log(`Basket is ${basket}`);
 console.log('Let\'s let them stretch their legs:', basket);
+
+
+// I lost a lot of time this week to unrelated issues
+// so I am not doing the stretches right now, but want to come back to them
+// on our upcoming week off!
